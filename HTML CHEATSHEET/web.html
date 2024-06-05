@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Components Example</title>
+</head>
+<body>
+    <template id="my-template">
+        <p>Template content</p>
+    </template>
+    <script>
+        const template = document.getElementById('my-template').content.cloneNode(true);
+        document.body.appendChild(template);
+    </script>
+</body>
+</html>
